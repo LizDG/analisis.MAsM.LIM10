@@ -8,6 +8,12 @@ sudo add-apt-repository 'deb https://cloud.r-project.org/bin/linux/ubuntu focal-
 sudo apt update
 sudo apt install r-base
 
+##Instalación de rStudio 
+#Descargar de: https://rstudio.com/products/rstudio/download/#download
+# archivo: Ubuntu 18/Debian 10
+
+install.packages(c("knitr", "kableExtra", "reshape2", "tidyverse", "ggplot", "magrittr", "vcfR"))
+
 ##Instalación Dendroscope
 #Descargar de: https://uni-tuebingen.de/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/informatik/lehrstuehle/algorithms-in-bioinformatics/software/dendroscope/
 # archivo: Dendroscope_unix_3_7_4.sh 
@@ -25,3 +31,8 @@ java -jar /home/dell/mucor.asm.423/software/FigTree.v1.4.4/lib/figtree.jar
 unzip fastANI-Linux64-v1.32.zip
 #para correrlo: 
 /home/dell/mucor.asm.423/software/fastANI -h
+
+##Instalación jalview
+##Descargar de: http://www.jalview.org/getdown/release/ (seleccionar "Jalview executable .jar file")
+#para correrlo: 
+java -jar /home/dell/mucor.asm.423/software/jalview-all-2.11.1.4-j1.8.jar
