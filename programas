@@ -12,3 +12,16 @@ sudo apt install r-base
 #Descargar de: https://uni-tuebingen.de/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/informatik/lehrstuehle/algorithms-in-bioinformatics/software/dendroscope/
 # archivo: Dendroscope_unix_3_7_4.sh 
 #tutorial: https://software-ab.informatik.uni-tuebingen.de/download/dendroscope/manual.pdf
+chmod u+x  Dendroscope_unix_3_7_4.sh 
+
+##Instalacion Figtree
+#Descargar de: https://github.com/rambaut/figtree/releases 
+unzip FigTree.v1.4.4.zip 
+#para correrlo: 
+java -jar /home/dell/mucor.asm.423/software/FigTree.v1.4.4/lib/figtree.jar 
+
+##Instalación FastANI
+#Descargar de: https://github.com/ParBLiSS/FastANI/releases/tag/v1.32
+unzip fastANI-Linux64-v1.32.zip
+#para correrlo: 
+/home/dell/mucor.asm.423/software/fastANI -h
