@@ -62,3 +62,7 @@ java -jar /home/dell/mucor.asm.423/software/jalview-all-2.11.1.4-j1.8.jar
 tar xvf quast-5.0.2.tar.gz
 cd quast-5.0.2
 ./setup.py install_full
+
+#Instalacion mafft
+#Descargar de: https://mafft.cbrc.jp/alignment/software/linux.html
+sudo rpm -Uvh  mafft-7.475-gcc_fc6.x86_64.rpm
