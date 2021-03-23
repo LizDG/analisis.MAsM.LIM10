@@ -13,6 +13,10 @@ sudo apt install r-base
 # archivo: Ubuntu 18/Debian 10
 
 install.packages(c("knitr", "kableExtra", "reshape2", "tidyverse", "ggplot", "magrittr", "vcfR"))
+if (!requireNamespace("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+BiocManager::install(version = "3.12")
+BiocManager::install("ggtree")
 
 ##Instalación Dendroscope
 #Descargar de: https://uni-tuebingen.de/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/informatik/lehrstuehle/algorithms-in-bioinformatics/software/dendroscope/
@@ -33,6 +37,12 @@ unzip fastANI-Linux64-v1.32.zip
 /home/dell/mucor.asm.423/software/fastANI -h
 
 ##Instalación jalview
-##Descargar de: http://www.jalview.org/getdown/release/ (seleccionar "Jalview executable .jar file")
+#Descargar de: http://www.jalview.org/getdown/release/ (seleccionar "Jalview executable .jar file")
 #para correrlo: 
 java -jar /home/dell/mucor.asm.423/software/jalview-all-2.11.1.4-j1.8.jar
+
+#Instalacion quast
+#Descargar de: https://github.com/ablab/quast/releases/tag/quast_5.0.2 
+tar xvf quast-5.0.2.tar.gz
+cd quast-5.0.2
+./setup.py install_full
