@@ -1,0 +1,14 @@
+#Puede ser util saber qué Ubuntu esta instalado:
+cat /etc/*-release
+#
+
+##Instalación de R 4.0.4
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
+sudo add-apt-repository 'deb https://cloud.r-project.org/bin/linux/ubuntu focal-cran40/'
+sudo apt update
+sudo apt install r-base
+
+##Instalación Dendroscope
+#Descargar de: https://uni-tuebingen.de/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/informatik/lehrstuehle/algorithms-in-bioinformatics/software/dendroscope/
+# archivo: Dendroscope_unix_3_7_4.sh 
+#tutorial: https://software-ab.informatik.uni-tuebingen.de/download/dendroscope/manual.pdf
