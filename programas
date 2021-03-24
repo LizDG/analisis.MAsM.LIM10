@@ -107,3 +107,6 @@ cd bioawk-1.0
 make
 #para correrlo: 
 home/dell/mucor.asm.423/software/bioawk-1.0/bioawk -c fastx '{ if(length($seq) > 5000) { print ">"$name; print $seq }}' results.ccs.bc1002_BAK8A_OA--bc1002_BAK8A_OA.otro.fasta > seq.mayores.5000.fasta
+
+#Instalación flye
+conda install flye
