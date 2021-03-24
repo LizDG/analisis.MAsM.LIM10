@@ -100,3 +100,10 @@ wget https://github.com/Nextomics/NextDenovo/releases/latest/download/NextDenovo
 tar -vxzf NextDenovo.tgz && cd NextDenovo
 ./nextDenovo test_data/run.cfg
 
+#Instalación bioawk
+#Descargar de: https://github.com/lh3/bioawk/releases/tag/v1.0
+unzip bioawk-1.0.zip
+cd bioawk-1.0
+make
+#para correrlo: 
+home/dell/mucor.asm.423/software/bioawk-1.0/bioawk -c fastx '{ if(length($seq) > 5000) { print ">"$name; print $seq }}' results.ccs.bc1002_BAK8A_OA--bc1002_BAK8A_OA.otro.fasta > seq.mayores.5000.fasta
