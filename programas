@@ -83,3 +83,20 @@ make
 #para correrlo: 
 /home/dell/mucor.asm.423/software/trimAl/source/readal
 /home/dell/mucor.asm.423/software/trimAl/source/trimal
+
+#Instalación samtools
+#Descargar de: http://www.htslib.org/download/
+tar -xf samtools-1.12.tar.bz2
+cd samtools-1.12
+./configure --prefix=/usr/bin/
+make
+make install
+#para correrlo: 
+/home/dell/mucor.asm.423/software/samtools-1.12/samtools --help
+
+#Instalación NextDenovo
+#Descargar de:
+wget https://github.com/Nextomics/NextDenovo/releases/latest/download/NextDenovo.tgz
+tar -vxzf NextDenovo.tgz && cd NextDenovo
+./nextDenovo test_data/run.cfg
+
