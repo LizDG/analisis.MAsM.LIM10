@@ -1,0 +1,7 @@
+##Para hacer un bucle, por ejemplo para alinear varios archivos
+
+#!/bin/bash
+for i in plusi
+do
+ mafft $i.fasta > $i.mafft.fasta
+done
