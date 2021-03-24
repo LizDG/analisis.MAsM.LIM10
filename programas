@@ -66,3 +66,11 @@ cd quast-5.0.2
 #Instalacion mafft
 #Descargar de: https://mafft.cbrc.jp/alignment/software/linux.html
 sudo rpm -Uvh  mafft-7.475-gcc_fc6.x86_64.rpm
+#para correrlo: 
+mafft in > out 
+
+#Instalación ASTRAL
+#Descargar de: https://github.com/smirarab/ASTRAL
+unzip Astral.5.7.7.zip
+#para correrlo: 
+java -jar /home/dell/mucor.asm.423/software/astral/astral.5.7.7.jar -i in.tree -o out.tre 2>out.log
