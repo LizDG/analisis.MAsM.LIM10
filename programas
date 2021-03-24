@@ -74,3 +74,12 @@ mafft in > out
 unzip Astral.5.7.7.zip
 #para correrlo: 
 java -jar /home/dell/mucor.asm.423/software/astral/astral.5.7.7.jar -i in.tree -o out.tre 2>out.log
+
+#Instalación trimAl
+#Descargar de: http://trimal.cgenomics.org/downloads
+tar xvf trimal.v1.2rev59.tar.gz
+cd trimAl/source
+make
+#para correrlo: 
+/home/dell/mucor.asm.423/software/trimAl/source/readal
+/home/dell/mucor.asm.423/software/trimAl/source/trimal
