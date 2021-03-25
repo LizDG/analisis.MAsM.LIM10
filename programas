@@ -110,3 +110,6 @@ home/dell/mucor.asm.423/software/bioawk-1.0/bioawk -c fastx '{ if(length($seq) >
 
 #Instalación flye
 conda install flye
+
+#Instalación InterProScan 
+https://interproscan-docs.readthedocs.io/en/latest/HowToDownload.html
