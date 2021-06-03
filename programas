@@ -113,3 +113,12 @@ conda install flye
 
 #Instalación InterProScan 
 https://interproscan-docs.readthedocs.io/en/latest/HowToDownload.html
+
+#Actualización java
+curl -s "https://get.sdkman.io" | bash
+source "$HOME/.sdkman/bin/sdkman-init.sh"
+sdk version
+    #Install Java (11.0.3-zulu)
+    sdk install java
+
+
